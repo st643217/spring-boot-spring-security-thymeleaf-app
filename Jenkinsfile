@@ -17,7 +17,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                bat 'spring-boot:run'
+                bat 'mvn spring-boot:run'
             }
         }
     }
